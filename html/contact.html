@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .tm-contact {
+    display: flex;
+}
+
+.tm-contact {
+    flex-direction: row-reverse;
+}
+
+.tm-about>div {
+    flex: 1 1;
+}
+
+.tm-contact-form-container,
+.tm-contact-info {
+    width: 40%;
+}
+
+.tm-contact-info {
+    padding-top: 20px;
+}
+
+.tm-contact-header {
+    width: 20%;
+}
+
+.tm-contact-header {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.tm-contact {
+    padding: 50px 20px;
+}
+
+.tm-contact>div {
+    padding-left: 34px;
+    padding-right: 34px;
+    box-sizing: border-box;
+}
+
+    </style>
+</head>
+<body>
+    <section class="contact mb-50 bgcolor-3 border-rounded">
+        <div class="contact-header flex-center">
+            <i class="fas fa-map-pin fa-3x"></i>
+            <h2>Contact</h2>
+        </div>
+        <div class="contact-info">
+            <address class="mb-30">
+                120 Curabitur sed tortor ultrices,
+                congue odio eget, posuere urna.
+                Praesent at rhoncus 10680
+            </address>
+            <div class="text-white mb-40">Tel: <a href="tel:0100200340" class="link-white">010-020-0340</a></div>
+            <div class="flex">
+                <a href="https://facebook.com" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="contact-form-container">
+            <form id="contact-form" action="" method="POST" class="contact-form">
+                  <input type="text" name="name" placeholder="name" required="" />
+                  <input type="email" name="email" placeholder="email" required="" />
+                  <textarea rows="5" name="message" class="mb-30" placeholder="message" required=""></textarea>		          	
+                  <button type="submit" class="right btn-submit">send</button>          	
+            </form>    
+        </div>
+</body>
+</html>

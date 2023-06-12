@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link href="../assets/css/original.css" rel="stylesheet">
+
+    <style>
+        span.req {
+            color: red; 
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="main">
+            <div id="inner">
+                
+                <header id="header">
+                    <a href="#" class="logo">
+                        <strong>전수경</strong>의 홈페이지
+                    </a>
+                    <ul class="icons">
+                        <li>
+                            <a href="#" class="icon brands fa-twitter">
+                                <span class="label">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon brands fa-facebook-f">
+                                <span class="label">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon brands fa-instagram">
+                                <span class="label">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </header>
+
+                <section>
+                    <header class="main">
+                        <h2>회원가입</h2>
+                    </header>
+                    <form action="javascript:saveMember();" class="memberFrm" name="memberFrm">
+                        <div class="table-wrapper">
+                            <table id="enroll" class="enroll alt">
+                                <tr>
+                                    <th>아이디<span class="req">*</span></th>
+                                    <td>
+                                        <input type="text" name="userId" id="userId" value="sookyeong">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>비밀번호<span class="req">*</span></th>
+                                    <td>
+                                        <input type="password" name="pwd" id="pwd">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>비밀번호 확인<span class="req">*</span></th>
+                                    <td>
+                                        <input type="password" id="pwdCheck">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>이름<span class="req">*</span></th>
+                                    <td>
+                                        <input type="text" name="userName" id="userName">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>이메일<span class="req">*</span></th>
+                                    <td>
+                                        <input type="email" name="email" id="email">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>전화번호<span class="req">*</span></th>
+                                    <td>
+                                        <input type="tel" name="phone" id="phone" class="phone" placeholder="010-2222-8888">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>메세지</th>
+                                    <td>
+                                        <input type="text" name="message" id="message" class="message" value="홈페이지 완성 축하~!">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="btn-wrapper">
+                                        <input type="submit" value="제출">
+                                        <input type="reset" value="초기화">
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </form>
+
+                </section>
+
+                <section>
+                    <header class="main">
+                        <h2>회원조회</h2>
+                    </header>
+                    <!-- table -->
+                    <div class="table-wrapper">
+                        <table id="members" class="members alt">
+                            <thead>
+                                <tr>
+                                    <th colspan="7">회원정보 <button id="getMembers">조회</button></th>
+                                </tr>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>이름</th>
+                                    <th>아이디</th>
+                                    <th>비밀번호</th>
+                                    <th>이메일</th>
+                                    <th>전화번호</th>
+                                    <th>메세지</th>
+                                    <th>가입시간</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </section>
+
+                <!-- 회원조회 -->
+                <section>
+                    <header class="main">
+                        <h2>회원조회</h2>
+                    </header>
+                    <!-- table -->
+                    <table id="searchMember" class="alt">
+                        <thead>
+                            <tr>
+                                <th colspan="7">
+                                    <label for="search">아이디 검색 :</label>
+                                    <input type="text" name="search" id="search">
+                                    <button id="searchId">찾기</button>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th colspan="7">조회된 회원정보</th>
+                            </tr>
+                            <tr>
+                                <th>번호</th>
+                                <th>이름</th>
+                                <th>아이디</th>
+                                <th>비밀번호</th>
+                                <th>이메일</th>
+                                <th>전화번호</th>
+                                <th>메세지</th>
+                                <th>가입시간</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </section>
+
+
+        
+
+
+
+
+            </div> <!-- .inner-->
+        </div> <!-- Main -->
+
+        <!-- 사이드바 -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- 미니포스트 -->
+                <section>
+                    <header class="major">
+                        <h2>Jeon Sookyeong</h2>
+                    </header>
+                    <div class="mini-posts">
+                        <article>
+                            <a href="#" class="image">
+                                <img src="./image/cat1.jpg" alt="">
+                            </a>
+                            <p>만나서 반가워요! 재밌게 구경하다 가세요~^^</p>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="#intro" class="active">Introduction</a></li>
+                        <li><a href="#roadmap">My RoadMap</a></li>
+                        <li><a href="#likes">What I Like</a></li>
+                        <li>
+                            <span class="opener">Travel</span>
+                            <ul>
+                                <a href="#travel">Thai</a>
+                                <a href="#travel">Laos</a>
+                            </ul>
+                        </li>
+                        <li><a href="./html/signin.html">회원가입</a></li>
+                    </ul>
+                </nav>
+                
+                <section>
+                    <header class="major">
+                        <h2>Get in touch</h2>
+                    </header>
+                    <p>연락처와 개인 SNS는 아래 링크에</p>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope">
+                            <a href="#">Sookyeong0505@gmail.com</a>
+                        </li>
+                        <li class="icon solid fa-phone">
+                            <a href="#">(010)-9916-0000</a>
+                        </li>
+                        <li class="icon solid fa-home">
+                            <a href="#">경기도 하남대로 802번길</a>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <fieldset>
+        <legend>방명록</legend>
+        <button id="memberBook">메세지 조회</button>
+        <table id="memberBook" class="memberBook">
+            <thead>
+                <tr>
+                    <th>아이디</th>
+                    <th>이름</th>
+                    <th>메세지</th>
+                    <th>남긴시간</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </fieldset> -->
+
+
+
+    <script>
+
+        class Member {
+            constructor(userId, pwd, userName, email, phone, message, createdAt){
+                this.userId = userId;
+                this.pwd = pwd;
+                this.userName = userName;
+                this.email = email;
+                this.phone = phone;
+                this.message = message;
+                this.createdAt = createdAt;
+            }
+            toString() {
+                return `Member(userId: ${userId}, pwd: ${pwd}, userName: ${userName}, email: ${email}, phone: ${phone}, message: ${message}, createdAt: '${createdAt}')`;
+            }
+        }
+
+        // 회원 정보 저장
+        const saveMember = () => {
+            const frm = document.memberFrm;
+            console.log(frm); // form tag
+
+            const userId = frm.userId;
+            const pwd = frm.pwd;
+            const userName = frm.userName;
+            const email = frm.email;
+            const phone = frm.phone;
+            const message = frm.message;
+            const createdAt = Date.now();
+
+            const member = new Member(userId.value, pwd.value, userName.value, email.value, phone.value, message.value, createdAt);
+            console.log(member, typeof member);
+
+            const memberList = JSON.parse(localStorage.getItem('memberList')) || [];
+            memberList.push(member);
+            console.log(memberList);
+
+            const jsonStr = JSON.stringify(memberList);
+            console.log(jsonStr);
+            localStorage.setItem("memberList", jsonStr);
+        };
+
+        getMembers.onclick = () => loadMemberList();
+
+        const loadMemberList = () => {
+            const tbody = document.querySelector("#members tbody");
+            console.log(tbody);
+            const memberList = JSON.parse(localStorage.getItem("memberList"));
+            console.log(memberList);
+
+            tbody.innerHTML = memberList.reduce((html, {userId, pwd, userName, email, phone, message, createdAt}, index) => {
+                const tr = `
+                <tr>
+                    <td>${index+1}</td>    
+                    <td>${userName}</td>    
+                    <td>${userId}</td>    
+                    <td>${pwd}</td>    
+                    <td>${email}</td>    
+                    <td>${phone}</td>    
+                    <td>${message}</td>    
+                    <td>${createdAt}</td>    
+                </tr>`;
+                return html+tr;
+            }, "");
+            
+        }
+
+        const formatDatetime = (millise) => {
+            const d = new Date(millis);
+            const f = n => n.toString().padStart(2, "0");
+            const yyyy = d.getFullYear().toString().substring(4);
+            const MM = f(d.getMonth()+1);
+            const dd = f(d.getDate());
+            const hh = f(d.getHours());
+            const mm = f(d.getMinutes());
+            const ss = f(d.getSeconds());
+            return `${yyyy}/${MM}/${dd} ${hh}:${mm}:${ss}`;
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
