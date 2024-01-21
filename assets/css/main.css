@@ -442,6 +442,10 @@ a.image:hover img{
 }
 
 /* Banner */
+#banner {
+	background: mediumspringgreen;
+
+}
 
 
 /* Table */
@@ -517,6 +521,7 @@ section, article {
 	flex-grow: 1;
 	flex-shrink: 1;
 	width: 100%;
+	background-color: aquamarine;
 
 }
 #main > .inner {
@@ -560,10 +565,12 @@ section, article {
 #sidebar {
 	flex-grow: 0;
 	flex-shrink: 0;
-	background-color: #f5f6f7;
+	/* background-color: #f5f6f7; */
+	background-color: grey;
 	font-size: 0.9em;
 	position: relative;
-	width: 26em;
+
+	width: 28em;
 	transition: margin-left 0.5s ease, box-shadow 0.5s ease;
 }
 #sidebar h2 {
@@ -724,6 +731,7 @@ section, article {
 /* Header */
 #header {
 	display: flex;
+	background-color: bisque;
 	border-bottom: 5px solid tomato;
 	padding: 6em 0 1em 0;
 	position: relative;
