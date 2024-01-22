@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>전수경 홈페이지</title>
+	<title>전수경의 홈페이지</title>
     <!-- 폰트, 아이콘 -->
     <link rel="stylesheet" href="./assets/fontawesome-free-6.4.0-web/css/all.css">
     <link rel="stylesheet" href="./assets/fontawesome-free-6.4.0-web/css/brands.css">
@@ -13,7 +13,7 @@
 
     <!-- 사이드바 css -->
     <!-- <link href="./assets/css/main.css" rel="stylesheet"> -->
-    <link href="./assets/css/original.css" rel="stylesheet">
+    <link href="./assets/css/main.css" rel="stylesheet">
     
 </head>
 <body>
@@ -21,14 +21,14 @@
     <!-- wrapper -->
 	<div id="wrapper">
 
-        <!-- main -->
+        <!-- 메인 -->
         <div id="main">
             <div class="inner">
                 
-                <!-- header -->
+                <!-- 메인 > 헤더 -->
                 <header id="header">
                     <a href="#" class="logo">
-                        <strong>전수경</strong>의 홈페이지
+                        전수경의 홈페이지
                     </a>
                     <ul class="icons">
                         <li>
@@ -49,6 +49,7 @@
                     </ul>
                 </header>
                 
+                <!-- 메인 > section:배너 -->
                 <section id="banner">
                     <div class="content">
                         <header>
@@ -56,14 +57,16 @@
                                 Sookyeong's<br>
                                 Homepage
                             </h1>
-                            <p style="font-family: 'Katuri';">막 개발을 시작했습니다. 생각보다 코딩은 재미있네요. 멋진 기능들을 추가하고 싶어요!</p>
+                            <p style="font-family: 'Katuri';"> 개발을 잘 하기 위해 노력 중 ... </p>
                         </header>
                         <span class="image object">
-                            <img src="./image/cat2.jpg" alt="">
+                            <!-- <img src="./image/cat2.jpg" alt=""> -->
                         </span>
                     </div>
                 </section>
-              <!-- id : introduction -->
+
+
+              <!-- 메인 > section:소개  -->
               <section id="intro" class="main special">
                   <div class="spotlight">
                       <div class="content">
@@ -87,6 +90,7 @@
                   </div>
               </section>
 
+              <!-- 메인 > section: -->
               <section>
                 <header class="major">
                     <h2>What I Like & Interest</h2>
@@ -182,70 +186,52 @@
               </section>
 
             </div>
+            <!-- 메인 > 이너 끝-->
         </div>
+        <!-- 메인 끝 -->
 
 
-        <!-- 사이드바 -->
-        <div id="sidebar">
-            <div class="inner">
 
-                <!-- 미니포스트 -->
-                <section>
-                    <header class="major">
-                        <h2>Jeon Sookyeong</h2>
-                    </header>
-                    <div class="mini-posts">
-                        <article>
-                            <a href="#" class="image">
-                                <img src="./image/cat1.jpg" alt="">
-                            </a>
-                            <p>만나서 반가워요! 재밌게 구경하다 가세요~^^</p>
-                        </article>
-                    </div>
-                </section>
-
-                <!-- Menu -->
-                <nav id="menu">
-                    <header class="major">
-                        <h2>Menu</h2>
-                    </header>
+        <!-- Menu -->
+        <nav id="menu">
+            <header class="major">
+                <h2>Menu</h2>
+            </header>
+            <ul>
+                <li><a href="#intro" class="active">Introduction</a></li>
+                <li><a href="#likes">What I Like</a></li>
+                <li><a href="#roadmap">My RoadMap</a></li>
+                <li>
+                    <span class="opener">Travel</span>
                     <ul>
-                        <li><a href="#intro" class="active">Introduction</a></li>
-                        <li><a href="#likes">What I Like</a></li>
-                        <li><a href="#roadmap">My RoadMap</a></li>
-                        <li>
-                            <span class="opener">Travel</span>
-                            <ul>
-                                <a href="#travel">Thai</a>
-                                <a href="#travel">Laos</a>
-                            </ul>
-                        </li>
-                        <li><a href="./html/signin.html">회원가입</a></li>
+                        <a href="#travel">Thai</a>
+                        <a href="#travel">Laos</a>
                     </ul>
-                </nav>
+                </li>
+                <li><a href="./html/signin.html">회원가입</a></li>
+            </ul>
+        </nav>
                 
-                <section>
-                    <header class="major">
-                        <h2>Get in touch</h2>
-                    </header>
-                    <p>연락처와 개인 SNS는 아래 링크에</p>
-                    <ul class="contact">
-                        <li class="icon solid fa-envelope">
-                            <a href="#">Sookyeong0505@gmail.com</a>
-                        </li>
-                        <li class="icon solid fa-phone">
-                            <a href="#">(010)-9916-0000</a>
-                        </li>
-                        <li class="icon solid fa-home">
-                            <a href="#">경기도 하남대로 802번길</a>
-                        </li>
-                    </ul>
-                </section>
+    <!-- 
+        <section>
+            <header class="major">
+                <h2>Get in touch</h2>
+            </header>
+            <p>연락처와 개인 SNS는 아래 링크에</p>
+            <ul class="contact">
+                <li class="icon solid fa-envelope">
+                    <a href="#">Sookyeong0505@gmail.com</a>
+                </li>
+                <li class="icon solid fa-phone">
+                    <a href="#">(010)-9916-0000</a>
+                </li>
+                <li class="icon solid fa-home">
+                    <a href="#">경기도 하남대로 802번길</a>
+                </li>
+            </ul>
+        </section>
+     -->
 
-            </div>
-        </div>
-
-    </div>
 
     <!-- js, jQuery 연결 -->
     <script src="./assets/js/jquery-3.7.0.js"></script>
